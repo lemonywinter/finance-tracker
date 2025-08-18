@@ -14,7 +14,7 @@ public partial class App : Application
 
     private void App_DispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
     {
-        MessageBox.Show($"An error occurred: {e.Exception.Message}\n\nDetails: {e.Exception.ToString()}", 
+        MessageBox.Show($"An error occurred: {e.Exception.Message}\n\nDetails: {e.Exception}", 
             "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         e.Handled = true;
     }
@@ -23,24 +23,8 @@ public partial class App : Application
     {
         if (e.ExceptionObject is Exception ex)
         {
-            MessageBox.Show($"A fatal error occurred: {ex.Message}\n\nDetails: {ex.ToString()}", 
+            MessageBox.Show($"A fatal error occurred: {ex.Message}\n\nDetails: {ex}", 
                 "Fatal Error", MessageBoxButton.OK, MessageBoxImage.Error);
-        }
-    }
-
-    protected override void OnStartup(StartupEventArgs e)
-    {
-        base.OnStartup(e);
-        
-        try
-        {
-            MainWindow = new MainWindow();
-            MainWindow.Show();
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show($"Startup error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            Shutdown(-1);
         }
     }
 }

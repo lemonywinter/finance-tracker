@@ -28,8 +28,8 @@ public abstract class Transaction
 
     public DateTime Date { get; set; }
     public string Name { get; set; }
+    public abstract string Category { get; set; }
     public string? Description { get; set; }
     public Cost Amount { get; set; }
-    public string? Category { get; set; }
     public bool Recurring { get; set; }
 }
