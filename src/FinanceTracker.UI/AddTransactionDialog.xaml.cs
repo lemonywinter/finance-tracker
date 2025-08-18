@@ -2,7 +2,7 @@ using System.Windows;
 using Expenses.Models;
 using Expenses.Models.Enums;
 
-namespace FinanceTracker.UI;
+namespace FinanceTracker.App;
 
 public partial class AddTransactionDialog : Window
 {

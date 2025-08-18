@@ -1,4 +1,4 @@
-<Window x:Class="FinanceTracker.UI.AddTransactionDialog"
+<Window x:Class="FinanceTracker.App.AddTransactionDialog"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Add Transaction" Height="300" Width="400"

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Threading;
 
-namespace FinanceTracker.UI;
+namespace FinanceTracker.App;
 
 public partial class App : Application
 {

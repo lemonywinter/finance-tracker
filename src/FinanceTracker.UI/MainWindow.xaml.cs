@@ -1,10 +1,11 @@
 ﻿using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 using Expenses.Models;
 using Expenses.Services;
 using Expenses.Storage;
 
-namespace FinanceTracker.UI;
+namespace FinanceTracker.App;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml
@@ -32,7 +33,8 @@ public partial class MainWindow : Window
 
     private void RefreshTransactions()
     {
-        TransactionsGrid.ItemsSource = _transactionManager.GetAllTransactions();
+        IncomeGrid.ItemsSource = _transactionManager.GetIncomes();
+        ExpensesGrid.ItemsSource = _transactionManager.GetExpenses();
         UpdateSummary();
     }
 
@@ -72,7 +74,10 @@ public partial class MainWindow : Window
 
     private void RemoveButton_Click(object sender, RoutedEventArgs e)
     {
-        var selectedTransaction = TransactionsGrid.SelectedItem as Transaction;
+        var selectedIncome = IncomeGrid.SelectedItem as Transaction;
+        var selectedExpense = ExpensesGrid.SelectedItem as Transaction;
+        var selectedTransaction = selectedIncome ?? selectedExpense;
+
         if (selectedTransaction == null)
         {
             MessageBox.Show("Please select a transaction to remove.", "No Selection", 
