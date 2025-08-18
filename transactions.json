@@ -1,0 +1,14 @@
+[
+  {
+    "$type": "income",
+    "Date": "2025-08-17T20:57:24.8199956-05:00",
+    "Name": "fdsfds",
+    "Description": "fdsaf",
+    "Amount": {
+      "Amount": 23.99,
+      "Currency": "USD"
+    },
+    "Category": "fasdf",
+    "Recurring": false
+  }
+]
