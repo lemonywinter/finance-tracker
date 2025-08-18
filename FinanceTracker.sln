@@ -5,11 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "src\ConsoleApp\ConsoleApp.csproj", "{36144AB8-152E-45AA-B944-5B594F2778CF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transactions", "src\Expenses\Transactions.csproj", "{D311511C-055D-48B8-8227-C603BD3CA749}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.UI", "src\FinanceTracker.UI\FinanceTracker.UI.csproj", "{1A9547E4-4D99-4DCC-AA7E-B9909FAD3092}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.App", "src\FinanceTracker.UI\FinanceTracker.App.csproj", "{1A9547E4-4D99-4DCC-AA7E-B9909FAD3092}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +19,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Debug|x64.Build.0 = Debug|Any CPU
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Debug|x86.Build.0 = Debug|Any CPU
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Release|x64.ActiveCfg = Release|Any CPU
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Release|x64.Build.0 = Release|Any CPU
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Release|x86.ActiveCfg = Release|Any CPU
-		{36144AB8-152E-45AA-B944-5B594F2778CF}.Release|x86.Build.0 = Release|Any CPU
 		{D311511C-055D-48B8-8227-C603BD3CA749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D311511C-055D-48B8-8227-C603BD3CA749}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D311511C-055D-48B8-8227-C603BD3CA749}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -62,7 +48,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{36144AB8-152E-45AA-B944-5B594F2778CF} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{D311511C-055D-48B8-8227-C603BD3CA749} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{1A9547E4-4D99-4DCC-AA7E-B9909FAD3092} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 	EndGlobalSection
